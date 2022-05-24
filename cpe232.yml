@@ -1,0 +1,10 @@
+---
+- hosts: all
+  become: true
+  roles:
+    - vsftpd
+    - dhcpd
+    - mariadb
+    - bind9
+    - samba
+    - httpd

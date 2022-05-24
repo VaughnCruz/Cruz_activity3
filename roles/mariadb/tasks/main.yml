@@ -1,0 +1,8 @@
+---
+# tasks file for Mariadb
+- name: install mariadb server package (Ubuntu)
+  tags: ubuntu, db, mariadb
+  apt:
+   name: mariadb-server
+   state: latest
+  when: ansible_distribution == "Ubuntu"
